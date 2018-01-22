@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../script/funkcje.php';
 ?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel data-interval=2000">
@@ -22,13 +23,14 @@ include '../script/funkcje.php';
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-
 </div>
 <div>
-
+    <?php
+    if(isset($_SESSION['user'])&&$_SESSION['user']=='admin'){
+    ?>
     <div class="container">
         <div id="jumbo1" class="jumbotron my-jumbotron">
-            <h1>Reaktywacja Orkiestry w roku 1998</h1>
+            <h1>Reaktywacja Orkiestry w roku 1998 <button type="button" class="btn btn-light">Edytuj tekst</button></h1>
             <p align="justify">
                 <?php
                 echo open_txt_file("../teksty/glowna_text.txt");
@@ -36,6 +38,18 @@ include '../script/funkcje.php';
             </p>
         </div>
     </div>
+    <?php } else{   ?>
+     <div class="container">
+        <div id="jumbo1" class="jumbotron my-jumbotron">
+            <h1>Reaktywacja Orkiestry w roku 1998 </h1>
+            <p align="justify">
+                <?php
+                echo open_txt_file("../teksty/glowna_text.txt");
+                ?>
+            </p>
+        </div>
+    </div>
+    <?php  }  ?>
 </div>
 <script>
 $(function(){

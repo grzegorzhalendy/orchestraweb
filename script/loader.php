@@ -13,5 +13,9 @@ if($CONTENT == "glowna"){
     require_once('../views/'.$CONTENT.'.php');
 } else if($CONTENT == "kontakt"){
     require_once('../views/'.$CONTENT.'.php');
+} else if($CONTENT == "ustawienia"){
+    require_once('../views/'.$CONTENT.'.php');
+} else if($CONTENT == "wyloguj"){
+    require_once('../script/'.$CONTENT.'.php');
 } else
     ?>

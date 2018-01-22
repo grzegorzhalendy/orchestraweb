@@ -1,14 +1,150 @@
-body {
-    background: url(/img/Logowanie.JPG) fixed;
+html, body {
+    background: url(/img/Logowanie.JPG) fixed no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.btn{
+    float: right!important;
+}
+
+footer {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: right;
+    img {
+        margin: 12px;
+    }
+    p {
+        color: aliceblue;
+        font-size: 12px;
+    }
+
+}
+.content2{
+    form{
+        position:relative;
+        padding-top: 10px;
+    }
+    label{
+        //position: relative;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 0 auto;
+        text-align: center;
+    }
+    h2{
+        //position: relative;
+        color: white;
+        margin-bottom: 0px;
+        width: 0 auto;
+        text-align: center;
+    }
+    margin-top: 100px;
+
 }
 
 form {
     position: relative;
-    padding-top: 200px;
-
-
+    padding-top: 100px;
     text-align: center;
+    input[type="submit"] {
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 30px;
+
+    }
+    h1{
+        color: white;
+    }
+    a{
+        color: blue;
+        font-style: italic;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        margin: 0;
+        padding: 5px 10px;
+        background: 0;
+        border: 0;
+        color: white;
+        border-bottom: 1px solid #FFFFFF;
+        outline: 0;
+        font-style: italic;
+        text-decoration-color: white;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        outline: 0;
+    }
+    input[type="email"]:active,
+    input[type="text"]:active,
+    input[type="password"]:active {
+        width: 100%;
+        margin: 0;
+        padding: 5px 10px;
+        background: 0;
+        border: 0;
+        color: white;
+        border-bottom: 1px solid #FFFFFF;
+        outline: 0;
+        font-style: italic;
+        text-decoration-color: white;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        outline: 0;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: white;
+        font-style:italic;
+        margin:5%;
+    }
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: white;
+        font-style:italic;
+        margin:5%;
+    }
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: white;
+        font-style:italic;
+        margin:5%;
+    }
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: white;
+        font-style:italic;
+        margin:5%;
+    }
+}
+
+.navdol {
+    position: absolute;
+    height: 10px;
+    width: auto;
+}
+
+.log-view {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .my-nav {
@@ -47,15 +183,14 @@ nav.small {
 
 .bg {
     position: relative;
-    height: 100% ;
-}
-
-.content {
+    min-height: 100%;
+    .content {
     align-items: center;
     width: 100%;
-
-
 }
+}
+
+
 
 .my-carusel {
     position: relative;

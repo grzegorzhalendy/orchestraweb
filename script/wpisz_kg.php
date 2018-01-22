@@ -7,7 +7,7 @@ if(isset($email)&&isset($imie)&&isset($text)){
     if(empty($email)){
     }else{
         require_once('mysql_connect.php');
-        $query=$db->prepare('INSERT INTO ksiega_gosci VALUES (NULL,:imie,:data,:email,:text)');
+        $query=$db->prepare('INSERT INTO ksiega_gosci VALUES (NULL,:imie,:data,:email,:text,FALSE)');
         $query->bindParam(':imie', $imie);
         $query->bindParam(':data', $data);
         $query->bindParam(':email', $email);
